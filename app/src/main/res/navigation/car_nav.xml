@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_nav"
+    app:startDestination="@id/list">
+    <fragment
+        android:id="@+id/list"
+        android:name="ru.shekhovtsov.carbase.fragments.list.ListFragment"
+        android:label="Cars available"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_list_to_add"
+            app:destination="@id/add" />
+        <action
+            android:id="@+id/action_list_to_configureFragment"
+            app:destination="@id/configure" />
+    </fragment>
+    <fragment
+        android:id="@+id/add"
+        android:name="ru.shekhovtsov.carbase.fragments.add.AddFragment"
+        android:label="@string/add_new_car"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_add_to_list"
+            app:destination="@id/list" />
+    </fragment>
+    <fragment
+        android:id="@+id/configure"
+        android:name="ru.shekhovtsov.carbase.fragments.configure.ConfigureFragment"
+        android:label="Configure car"
+        tools:layout="@layout/fragment_configure" >
+        <action
+            android:id="@+id/action_configureFragment_to_list"
+            app:destination="@id/list" />
+        <argument
+            android:name="currentcar"
+            app:argType="ru.shekhovtsov.carbase.model.Car" />
+    </fragment>
+</navigation>

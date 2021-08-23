@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CarBase</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload">Upload</string>
+    <string name="brand_name">Brand name</string>
+    <string name="horsepower">Horsepower</string>
+    <string name="car_image">Car image</string>
+    <string name="add_new_car">Add new car</string>
+    <string name="country">Country</string>
+    <string name="reconfigure">Reconfigure</string>
+    <string name="delete">Delete</string>
+    <string name="sort_by_abc">Sort by ABC</string>
+</resources>

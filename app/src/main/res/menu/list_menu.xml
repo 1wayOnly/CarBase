@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+
+    <item android:id="@+id/sort"
+        android:title="@string/sort_by_abc"
+        android:icon="@drawable/ic_sort_abc"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"/>
+
+
+</menu>
